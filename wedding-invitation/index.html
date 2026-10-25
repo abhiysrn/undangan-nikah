@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Anindya &amp; Raka — Undangan Pernikahan</title>
+  <meta name="description" content="Dengan penuh sukacita, kami mengundang Anda untuk hadir di hari pernikahan kami.">
+  <meta name="theme-color" content="#F7F4EE">
+
+  <!-- Undangan bersifat pribadi: jangan diindeks mesin pencari. Hapus baris ini bila ingin sebaliknya. -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Pratinjau saat link dibagikan (WhatsApp, dll). Crawler tidak menjalankan JavaScript,
+       jadi bagian ini diedit langsung di sini. Ganti GANTI-DOMAIN-ANDA dengan domain Vercel Anda. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Anindya &amp; Raka — Undangan Pernikahan">
+  <meta property="og:description" content="Dengan penuh sukacita, kami mengundang Anda untuk hadir di hari pernikahan kami.">
+  <meta property="og:image" content="https://GANTI-DOMAIN-ANDA.vercel.app/assets/photos/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>document.documentElement.className += ' js is-locked';</script>
+  <noscript><style>.cover{display:none}.music{display:none}</style></noscript>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+
+  <!-- ===================== LAYAR PEMBUKA ===================== -->
+  <section class="cover" id="cover" aria-labelledby="cover-names">
+    <div class="cover__media">
+      <img id="cover-photo" alt="" width="1000" height="1250" decoding="async" fetchpriority="high">
+    </div>
+    <div class="cover__body">
+      <p class="eyebrow" data-in style="--d:250">Undangan Pernikahan</p>
+      <h1 class="cover__names" id="cover-names" data-in style="--d:400"></h1>
+      <p class="cover__date" id="cover-date" data-in style="--d:550"></p>
+
+      <div class="cover__guest" id="cover-guest" hidden data-in style="--d:700">
+        <p class="eyebrow">Kepada Yth.</p>
+        <p class="cover__guest-name" id="guest-name"></p>
+      </div>
+
+      <button type="button" class="btn btn--solid cover__open" id="open-btn" data-in style="--d:850">
+        Buka Undangan
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================== HALAMAN UNDANGAN ===================== -->
+  <main class="main" id="main" tabindex="-1" inert>
+
+    <header class="hero" id="top">
+      <img class="hero__img" id="hero-photo" alt="" width="1200" height="1500" decoding="async">
+      <div class="hero__content">
+        <p class="eyebrow eyebrow--light" data-reveal style="--d:900">Kami Menikah</p>
+        <h2 class="hero__names" id="hero-names" data-reveal style="--d:1050"></h2>
+        <p class="hero__date" id="hero-date" data-reveal style="--d:1200"></p>
+      </div>
+    </header>
+
+    <section class="intro wrap" aria-labelledby="intro-greeting">
+      <p class="eyebrow" id="intro-greeting" data-reveal></p>
+      <p class="intro__text" id="intro-text" data-reveal style="--d:120"></p>
+      <span class="rule" aria-hidden="true" data-reveal style="--d:200"></span>
+      <blockquote class="intro__quote" id="intro-quote" data-reveal style="--d:260">
+        <p id="quote-text"></p>
+        <footer id="quote-source" hidden></footer>
+      </blockquote>
+    </section>
+
+    <section class="section wrap" id="couple" aria-labelledby="couple-title">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">Mempelai</p>
+        <h2 class="section-title" id="couple-title">Dua insan, <em>satu langkah baru</em></h2>
+      </header>
+      <div class="people" id="people"></div>
+    </section>
+
+    <section class="section wrap" id="gallery" aria-labelledby="gallery-title">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">Galeri</p>
+        <h2 class="section-title" id="gallery-title">Potongan <em>cerita kami</em></h2>
+      </header>
+      <div class="gallery" id="gallery-grid"></div>
+    </section>
+
+    <section class="section section--dark" id="countdown" aria-labelledby="cd-title">
+      <div class="wrap countdown">
+        <p class="eyebrow eyebrow--light" data-reveal>Menuju Hari Bahagia</p>
+        <h2 class="section-title section-title--light" id="cd-title" data-reveal style="--d:100"><span id="cd-date"></span></h2>
+        <div class="cd" id="cd" role="timer" aria-label="Hitung mundur menuju hari pernikahan" data-reveal style="--d:200">
+          <div class="cd__unit"><span class="cd__num" data-unit="days">00</span><span class="cd__label">Hari</span></div>
+          <div class="cd__unit"><span class="cd__num" data-unit="hours">00</span><span class="cd__label">Jam</span></div>
+          <div class="cd__unit"><span class="cd__num" data-unit="minutes">00</span><span class="cd__label">Menit</span></div>
+          <div class="cd__unit"><span class="cd__num" data-unit="seconds">00</span><span class="cd__label">Detik</span></div>
+        </div>
+        <p class="cd__done" id="cd-done" hidden></p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="events" aria-labelledby="events-title">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">Acara</p>
+        <h2 class="section-title" id="events-title">Waktu &amp; <em>tempat</em></h2>
+      </header>
+      <div class="events" id="events-list"></div>
+      <p class="events__note" id="events-note" data-reveal></p>
+    </section>
+
+    <section class="section section--tint" id="rsvp" aria-labelledby="rsvp-title">
+      <div class="wrap wrap--narrow">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">RSVP</p>
+          <h2 class="section-title" id="rsvp-title">Konfirmasi <em>kehadiran</em></h2>
+          <p class="section-lead">Mohon konfirmasi kehadiran Anda agar kami dapat menyiapkan segalanya dengan baik.</p>
+        </header>
+
+        <form class="form" id="rsvp-form" novalidate data-reveal style="--d:100">
+          <div class="field">
+            <label for="rsvp-name">Nama lengkap</label>
+            <input id="rsvp-name" name="name" type="text" autocomplete="name" maxlength="80" required>
+            <p class="field__error" id="err-name" role="alert"></p>
+          </div>
+
+          <fieldset class="field">
+            <legend>Apakah Anda akan hadir?</legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="attendance" value="hadir"><span>Ya, saya hadir</span></label>
+              <label class="choice"><input type="radio" name="attendance" value="tidak-hadir"><span>Maaf, tidak bisa hadir</span></label>
+            </div>
+            <p class="field__error" id="err-attendance" role="alert"></p>
+          </fieldset>
+
+          <div class="field" id="guests-field" hidden>
+            <label for="rsvp-guests">Jumlah tamu</label>
+            <select id="rsvp-guests" name="guests"></select>
+          </div>
+
+          <div class="field">
+            <label for="rsvp-wish">Ucapan &amp; doa <span class="optional">(opsional)</span></label>
+            <textarea id="rsvp-wish" name="wish" rows="4"></textarea>
+            <p class="counter"><span id="wish-count">0</span>/<span id="wish-max">300</span></p>
+          </div>
+
+          <!-- Kolom jebakan untuk bot: harus tetap kosong -->
+          <div class="hp" aria-hidden="true">
+            <label for="rsvp-website">Website</label>
+            <input id="rsvp-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn btn--solid btn--block" id="rsvp-submit">Kirim Konfirmasi</button>
+          <p class="form__status" id="rsvp-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="thanks" id="rsvp-thanks" hidden tabindex="-1">
+          <p class="eyebrow">Terima kasih</p>
+          <h3 class="thanks__title" id="thanks-title"></h3>
+          <p class="thanks__text" id="thanks-text"></p>
+          <button type="button" class="link" id="thanks-again">Kirim respons lain</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap wrap--narrow" id="guestbook" aria-labelledby="guestbook-title">
+      <header class="section-head" data-reveal>
+        <p class="eyebrow">Buku Tamu</p>
+        <h2 class="section-title" id="guestbook-title">Ucapan &amp; <em>doa</em></h2>
+        <p class="section-lead" id="wish-total" hidden></p>
+      </header>
+
+      <div class="wishes" id="wishes" aria-live="polite"></div>
+
+      <div class="wishes__actions">
+        <button type="button" class="btn btn--ghost" id="wishes-more" hidden>Lihat lebih banyak</button>
+        <button type="button" class="link" id="wishes-refresh" hidden>Muat ulang</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap">
+        <p class="eyebrow eyebrow--light" data-reveal>Dengan cinta</p>
+        <p class="footer__names" id="footer-names" data-reveal style="--d:100"></p>
+        <p class="footer__text" id="footer-text" data-reveal style="--d:200"></p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ===================== KONTROL MUSIK ===================== -->
+  <button type="button" class="music" id="music-btn" hidden aria-pressed="false" aria-label="Putar musik">
+    <svg class="music__icon music__icon--play" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+    <svg class="music__icon music__icon--pause" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>
+  </button>
+  <audio id="bgm" preload="none"></audio>
+
+  <!-- ===================== LIGHTBOX GALERI ===================== -->
+  <dialog class="lightbox" id="lightbox" aria-label="Galeri foto">
+    <button type="button" class="lightbox__btn lightbox__close" id="lb-close" aria-label="Tutup">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>
+    </button>
+    <button type="button" class="lightbox__btn lightbox__prev" id="lb-prev" aria-label="Foto sebelumnya">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+    </button>
+    <button type="button" class="lightbox__btn lightbox__next" id="lb-next" aria-label="Foto berikutnya">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img id="lb-img" alt="">
+      <figcaption id="lb-count"></figcaption>
+    </figure>
+  </dialog>
+
+</body>
+</html>

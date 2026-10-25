@@ -15,8 +15,8 @@ window.INVITATION = {
 
   /* ---------- Judul tab browser & deskripsi ---------- */
   meta: {
-    title: 'Anindya & Raka — Undangan Pernikahan',
-    description: 'Dengan penuh sukacita, kami mengundang Anda untuk hadir di hari pernikahan kami.'
+ title: 'Icha & Friendly — Undangan Pernikahan',
+description: 'Dengan penuh sukacita, Icha & Friendly mengundang Anda untuk hadir di hari pernikahan kami.'
   },
 
   /* ---------- Mempelai ----------

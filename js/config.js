@@ -30,7 +30,7 @@ description: 'Dengan penuh sukacita, Icha & Friendly mengundang Anda untuk hadir
       role: 'Mempelai Wanita',
       nickname: 'Icha',
       fullName: 'Aisyah Valyana Saputri',
-      parents: 'Putri dari Bapak Muhammad Maksum & Ibu Eni Suryani',
+      parents: 'Putri dari almarhum Bapak Muhammad Maksum & Ibu Eni Suryani',
       photo: 'assets/photos/bride.jpg',
       instagram: ''
     },
@@ -38,7 +38,7 @@ description: 'Dengan penuh sukacita, Icha & Friendly mengundang Anda untuk hadir
       role: 'Mempelai Pria',
       nickname: 'Friendly',
       fullName: 'Friendly Septiano Saputra',
-      parents: 'Putra dari Bapak Ramli Majid & Ibu Sri Wahyuni',
+     parents: 'Putra dari almarhum Bapak Ramli Majid & almarhumah Ibu Sri Wahyuni',
       photo: 'assets/photos/groom.jpg',
       instagram: ''
     }

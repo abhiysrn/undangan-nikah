@@ -25,25 +25,25 @@ window.INVITATION = {
      photo     : foto potret, rasio ideal 4:5 (mis. 900 x 1125 px)
      instagram : username tanpa @ (kosongkan '' bila tidak ingin ditampilkan) */
   couple: {
-    people: [
-      {
-        role: 'Mempelai Wanita',
-        nickname: 'Anindya',
-        fullName: 'Anindya Putri Maheswari',
-        parents: 'Putri dari Bapak Hadi Maheswari & Ibu Sri Wulandari',
-        photo: 'assets/photos/bride.jpg',
-        instagram: ''
-      },
-      {
-        role: 'Mempelai Pria',
-        nickname: 'Raka',
-        fullName: 'Raka Aditya Pratama',
-        parents: 'Putra dari Bapak Bambang Pratama & Ibu Lestari Dewi',
-        photo: 'assets/photos/groom.jpg',
-        instagram: ''
-      }
-    ]
-  },
+  people: [
+    {
+      role: 'Mempelai Wanita',
+      nickname: 'Icha',
+      fullName: 'Aisyah Valyana Saputri',
+      parents: 'Putri dari Bapak Muhammad Maksum & Ibu Eni Suryani',
+      photo: 'assets/photos/bride.jpg',
+      instagram: ''
+    },
+    {
+      role: 'Mempelai Pria',
+      nickname: 'Friendly',
+      fullName: 'Friendly Septiano Saputra',
+      parents: 'Putra dari Bapak Ramli Majid & Ibu Sri Wahyuni',
+      photo: 'assets/photos/groom.jpg',
+      instagram: ''
+    }
+  ]
+},
 
   /* ---------- Acara ----------
      timezone       : zona waktu IANA untuk menampilkan jam (Asia/Jakarta, Asia/Makassar, Asia/Jayapura)

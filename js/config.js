@@ -54,31 +54,22 @@ description: 'Dengan penuh sukacita, Icha & Friendly mengundang Anda untuk hadir
        mapsUrl      : (opsional) tempel link Google Maps hasil "Bagikan" dari aplikasi Maps.
                       Bila kosong, tombol memakai pencarian Google Maps dari nama venue + alamat. */
   event: {
-    timezone: 'Asia/Makassar',
-    timezoneLabel: 'WITA',
-    countdownTo: '',
-    note: 'Mohon hadir 15 menit sebelum acara dimulai. Kehadiran dan doa restu Anda adalah hadiah terindah bagi kami.',
-    items: [
-      {
-        id: 'akad',
-        title: 'Akad Nikah',
-        start: '2027-01-16T09:00:00+08:00',
-        end:   '2027-01-16T10:30:00+08:00',
-        venue: 'Nama Gedung / Rumah Mempelai',
-        address: 'Jl. Contoh No. 1, Kota, Provinsi',
-        mapsUrl: ''
-      },
-      {
-        id: 'resepsi',
-        title: 'Resepsi',
-        start: '2027-01-16T12:00:00+08:00',
-        end:   '2027-01-16T15:00:00+08:00',
-        venue: 'Nama Gedung Resepsi',
-        address: 'Jl. Contoh No. 2, Kota, Provinsi',
-        mapsUrl: ''
-      }
-    ]
-  },
+  timezone: 'Asia/Jakarta',
+  timezoneLabel: 'WIB',
+  countdownTo: '',
+  note: 'Mohon hadir tepat waktu untuk mengikuti prosesi akad nikah.',
+  items: [
+    {
+      id: 'akad',
+      title: 'Akad Nikah',
+      start: '2026-10-30T09:00:00+07:00',
+      end: '2026-10-30T10:30:00+07:00',
+      venue: 'KUA DAU',
+      address: 'KUA Dau, Kabupaten Malang, Jawa Timur',
+      mapsUrl: 'https://maps.app.goo.gl/cgzLhaCRWEA9NDdS6?g_st=ic'
+    }
+  ]
+},
 
   /* ---------- Foto ----------
      Ganti file di folder assets/photos/ dengan foto Anda (nama file boleh tetap sama),

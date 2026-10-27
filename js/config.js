@@ -57,7 +57,7 @@ description: 'Dengan penuh sukacita, Icha & Friendly mengundang Anda untuk hadir
   timezone: 'Asia/Jakarta',
   timezoneLabel: 'WIB',
   countdownTo: '',
-  note: 'Mohon hadir tepat waktu untuk mengikuti prosesi akad nikah.',
+  note: 'Mohon hadir tepat waktu untuk mengikuti rangkaian acara pernikahan.',
   items: [
     {
       id: 'akad',
@@ -67,10 +67,18 @@ description: 'Dengan penuh sukacita, Icha & Friendly mengundang Anda untuk hadir
       venue: 'KUA DAU',
       address: 'KUA Dau, Kabupaten Malang, Jawa Timur',
       mapsUrl: 'https://maps.app.goo.gl/cgzLhaCRWEA9NDdS6?g_st=ic'
+    },
+    {
+      id: 'resepsi',
+      title: 'Resepsi',
+      start: '2026-10-30T16:00:00+07:00',
+      end: '2026-10-30T23:59:00+07:00',
+      venue: 'BRUNO AGUSTO HEADQUARTER',
+      address: '3H87+8J9, Jl. Raya Sempu, Sempu, Gadingkulon, Kec. Dau, Kabupaten Malang, Jawa Timur 65151',
+      mapsUrl: 'https://maps.app.goo.gl/h5xfBX2uDR3CWrJg7?g_st=iw'
     }
   ]
 },
-
   /* ---------- Foto ----------
      Ganti file di folder assets/photos/ dengan foto Anda (nama file boleh tetap sama),
      atau ubah alamat file di bawah ini.

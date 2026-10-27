@@ -72,7 +72,7 @@ description: 'Dengan penuh sukacita, Icha & Friendly mengundang Anda untuk hadir
       id: 'resepsi',
       title: 'Resepsi',
       start: '2026-10-30T16:00:00+07:00',
-      end: '2026-10-30T23:59:00+07:00',
+      end: '',
       venue: 'BRUNO AGUSTO HEADQUARTER',
       address: '3H87+8J9, Jl. Raya Sempu, Sempu, Gadingkulon, Kec. Dau, Kabupaten Malang, Jawa Timur 65151',
       mapsUrl: 'https://maps.app.goo.gl/h5xfBX2uDR3CWrJg7?g_st=iw'
